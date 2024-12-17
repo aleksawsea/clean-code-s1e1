@@ -35,15 +35,19 @@ var createNewTaskElement=function(taskString){
     label.innerText=taskString;
     label.className='todo-form__task';
 
+    listItem.className="todo-form__task-row todo-form__task-row";
+
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="todo-form__task";
+    editInput.className="todo-form__task-value";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="todo-form__button_edit-task";
+    editButton.className="todo-form__button todo-form__button_edit-task";
 
-    deleteButton.className="todo-form__button_delete-task";
+    deleteButtonImg.className="todo-form__button__delete-image";
+
+    deleteButton.className="todo-form__button todo-form__button_delete-task";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -75,14 +79,16 @@ var addTask=function(){
 
 //Edit an existing task.
 
-var editTask=function(){
+var editTask=function(event){
+    event.preventDefault();
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
 
     var listItem=this.parentNode;
-
+console.log(listItem);
     var editInput=listItem.querySelector('input[type=text]');
+console.log(editInput);
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".todo-form__button_edit-task");
     var containsClass=listItem.classList.contains("todo-form__task-row_edit-mode");
