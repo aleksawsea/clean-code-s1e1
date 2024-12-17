@@ -39,10 +39,12 @@ body {
   margin: 0;
   padding: 0px;
 }
-.todo-form__task-row, .todo-form__section-caption {
+.todo-form__task-row,
+.todo-form__section-caption {
   list-style: none;
 }
-.todo-form__task-value,.todo-form__button{
+.todo-form__task-value,
+.todo-form__button {
   outline: none;
 }
 .todo-form__button {
