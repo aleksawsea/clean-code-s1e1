@@ -7,15 +7,15 @@
   </head>
   <body>
     <section class="details-container">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix scheme">
+      <img class="details-container__scheme" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix scheme">
       <a class="details-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </section>
     <form class="todo-form">
       <section class="todo-form__adding-elements-section">
         <p class="todo-form__section-caption" for="new-task">Add Item</p>
         <fieldset class="todo-form__new-element-adding">
-          <input id="new-task" class="todo-form__new-task" type="text">
-          <button type="button">Add</button>
+          <input id="new-task" class="todo-form__task-value" type="text">
+          <button class="todo-form__button" type="button">Add</button>
         </fieldset>
       </section>
       <p class="todo-form__section-caption">Todo</p>
@@ -25,14 +25,14 @@
           <label class="todo-form__task">Pay Bills</label>
           <input class="todo-form__task-value">
           <button class="todo-form__button todo-form__button_edit-task">Edit</button>
-          <button class="todo-form__button todo-form__button_delete-task"><img src="./remove.svg" alt=""></button>
+          <button class="todo-form__button todo-form__button_delete-task"><img class="todo-form__button__delete-image" src="./remove.svg" alt=""></button>
         </li>
         <li class="todo-form__task-row todo-form__task-row_edit-mode">
           <input type="checkbox" class="todo-form__task-checkbox">
           <label class="todo-form__task">Go Shopping</label>
           <input type="text" value="Go Shopping" class="todo-form__task-value">
           <button class="todo-form__button todo-form__button_edit-task">Save</button>
-          <button class="todo-form__button todo-form__button_delete-task"><img src="./remove.svg" alt=""></button>
+          <button class="todo-form__button todo-form__button_delete-task"><img class="todo-form__button__delete-image" src="./remove.svg" alt=""></button>
         </li>
       </ul>
       <p class="todo-form__section-caption">Completed</p>
@@ -42,7 +42,7 @@
           <label class="todo-form__task todo-form__task_completed">See the Doctor</label>
           <input type="text" class="todo-form__task-value">
           <button class="todo-form__button todo-form__button_edit-task">Edit</button>
-          <button class="todo-form__button todo-form__button_delete-task"><img src="./remove.svg" alt=""></button>
+          <button class="todo-form__button todo-form__button_delete-task"><img class="todo-form__button__delete-image" src="./remove.svg" alt=""></button>
         </li>
       </ul>
     </form>

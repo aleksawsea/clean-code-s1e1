@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.details-container img {
+.details-container__scheme {
   width: 100%;
 }
 .details-container .details-link {
@@ -41,7 +41,7 @@ body {
 .todo-form__task-row, .todo-form__section-caption {
   list-style:none;
 }
-input,button{
+.todo-form__task-value,.todo-form__button{
   outline:none;
 }
 .todo-form__button {
@@ -87,7 +87,7 @@ input,button{
   display: block;
   margin: 0 0 20px;
 }
-.todo-form__new-task {
+.todo-form__task-value {
   width: 318px;
 }
 
@@ -117,12 +117,12 @@ input,button{
 .todo-form__task-value {
   width: 226px
 }
-.todo-form__button_delete-task img {
+.todo-form__button__delete-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.todo-form__button_delete-task img:hover {
+.todo-form__button__delete-image:hover {
   transform: rotateZ(0);
 }
 
