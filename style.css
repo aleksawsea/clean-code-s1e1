@@ -27,7 +27,9 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.todo-form__task {
+.todo-form__task,
+.todo-form__task-value,
+.todo-form__task-value_add {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -69,7 +71,8 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
-.todo-form__task-value {
+.todo-form__task-value,
+.todo-form__task-value_add {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,7 +84,8 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.todo-form__task-value:focus {
+.todo-form__task-value:focus,
+.todo-form__task-value_add:focus {
   color: #333;
 }
 
@@ -136,7 +140,7 @@ body {
 }
 
 /* Edit Task */
-.todo-form__task-value {
+ .todo-form__task-value {
   display: none;
 }
 
