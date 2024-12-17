@@ -134,7 +134,7 @@ body {
 }
 
 /* Completed */
-.todo-form__task_completed {
+.todo-form__tasks-list_completed .todo-form__task {
   text-decoration: line-through;
   color: #888;
 }
