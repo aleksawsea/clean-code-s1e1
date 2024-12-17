@@ -18,8 +18,9 @@ body {
 }
 
 @media (max-width:768px) {
-  .details-container { text-align: center;
-}
+  .details-container {
+    text-align: center;
+  }
 }
 .todo-form {
   display: block;
